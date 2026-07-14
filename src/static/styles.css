@@ -65,13 +65,93 @@ section h3 {
   background-color: #f9f9f9;
 }
 
-.activity-card h4 {
+.activity-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
   margin-bottom: 10px;
+}
+
+.activity-card h4 {
+  margin-bottom: 0;
   color: #0066cc;
+}
+
+.spots-badge {
+  background-color: #e3f2fd;
+  color: #1565c0;
+  border-radius: 999px;
+  padding: 4px 8px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  white-space: nowrap;
 }
 
 .activity-card p {
   margin-bottom: 8px;
+}
+
+.activity-description {
+  color: #555;
+}
+
+.activity-schedule {
+  margin-bottom: 12px;
+}
+
+.participants-section {
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 12px 14px;
+}
+
+.participants-section h5 {
+  margin-bottom: 8px;
+  color: #1e3a5f;
+}
+
+.participants-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.participant-item {
+  background-color: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  padding: 6px 10px;
+  font-size: 0.95rem;
+  color: #334155;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+.participant-name {
+  overflow-wrap: anywhere;
+}
+
+.participant-remove-btn {
+  border: none;
+  background: transparent;
+  color: #c62828;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 0 2px;
+}
+
+.participant-remove-btn:hover {
+  color: #8e0000;
+}
+
+.participant-item.empty {
+  color: #64748b;
+  font-style: italic;
+  background-color: #f8fafc;
 }
 
 .form-group {
